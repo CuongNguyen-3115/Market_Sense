@@ -1,0 +1,14 @@
+# Python rác hệ thống
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Môi trường ảo
+venv/
+ENV/
+.env
+
+# IDE rác
+.vscode/
+.idea/
