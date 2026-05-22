@@ -1,0 +1,1 @@
+# Tính toán Moving Average (SMA, EMA), đo lường gia tốc (Momentum) để gán nhãn Trend (Uptrend, Downtrend, Sideway).

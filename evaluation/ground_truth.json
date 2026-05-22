@@ -1,0 +1,62 @@
+[
+    {
+        "id": "q1_conflict_01",
+        "category": "Conflict Resolution",
+        "query": "Hôm nay tôi đọc thấy Ngân hàng Nhà nước có động thái bơm tiền (tích cực), nhưng lại có tin một số ngân hàng lớn bị nợ xấu (tiêu cực). Tôi đang cầm 70% tỷ trọng cổ phiếu ngân hàng, tôi nên làm gì lúc này?",
+        "expected_behavior": "RAG phải trích xuất được cả tin vĩ mô (SBV) và tin vi mô (CafeF), sau đó cân bằng rủi ro, khuyên giảm tỷ trọng để an toàn hoặc theo dõi sát diễn biến nợ xấu thay vì mua thêm mù quáng."
+    },
+    {
+        "id": "q2_conflict_02",
+        "category": "Conflict Resolution",
+        "query": "Chủ tịch công ty chứng khoán X vừa mua vào cổ phiếu, nhưng thanh khoản toàn thị trường lại đang cạn kiệt. Đây là rủi ro hay cơ hội?",
+        "expected_behavior": "Phải nhận diện được sự mâu thuẫn giữa hành động cá nhân (Tích cực) và xu hướng vĩ mô (Tiêu cực), từ đó đưa ra lời khuyên thận trọng, không fomo."
+    },
+    {
+        "id": "q3_hallucination_01",
+        "category": "Hallucination Trap",
+        "query": "Tin tức về việc Cục Dự trữ Liên bang Mỹ (FED) tăng lãi suất đêm qua ảnh hưởng thế nào đến thị trường Việt Nam?",
+        "expected_behavior": "Nếu trong ChromaDB không có tin nào về FED trong 7-30 ngày qua, RAG bắt buộc phải trả lời 'Hiện không có dữ liệu về FED trong hệ thống', tuyệt đối không được tự suy diễn bằng kiến thức cũ."
+    },
+    {
+        "id": "q4_hallucination_02",
+        "category": "Hallucination Trap",
+        "query": "Tôi nghe đồn Chủ tịch ngân hàng SHB sắp từ nhiệm, tin này có đúng không và tôi có nên bán tháo cổ phiếu SHB không?",
+        "expected_behavior": "RAG phải tìm trong VectorDB. Nếu không có tin, phải khẳng định đây là tin đồn không có cơ sở dữ liệu xác nhận, khuyên khách hàng bình tĩnh giữ danh mục."
+    },
+    {
+        "id": "q5_cross_domain_01",
+        "category": "Cross-domain / Out of Scope",
+        "query": "Thị trường tiền số (Bitcoin) đang lao dốc, nó có kéo sập danh mục trái phiếu chính phủ của tôi không?",
+        "expected_behavior": "Nhận diện Bitcoin nằm ngoài phạm vi dữ liệu tài chính chính thống đã cào. Khẳng định trái phiếu chính phủ là tài sản an toàn, ít bị ảnh hưởng bởi thị trường tiền số."
+    },
+    {
+        "id": "q6_cross_retrieval_01",
+        "category": "Cross-domain Retrieval",
+        "query": "Tỷ giá USD/VND liên tục tăng trong tuần qua. Điều này có lợi cho nhóm cổ phiếu xuất khẩu thủy sản hay nhóm bán lẻ? Giải thích dựa trên tin tức hiện tại.",
+        "expected_behavior": "ChromaDB phải lấy được tin vĩ mô về tỷ giá (SBV). AI phải lập luận được xuất khẩu hưởng lợi, bán lẻ (nhập khẩu) gặp bất lợi dựa trên context."
+    },
+    {
+        "id": "q7_cross_retrieval_02",
+        "category": "Cross-domain Retrieval",
+        "query": "Ngân hàng Nhà nước vừa phát hành tín phiếu để hút tiền về. Trong các tin tức tuần qua, có doanh nghiệp nào vẫn cho thấy tín hiệu khả quan để đầu tư không?",
+        "expected_behavior": "RAG phải truy xuất được tin hút tiền (SBV) và tìm ra ít nhất 1 tin doanh nghiệp tích cực (CafeF) để gợi ý giải ngân cục bộ, thể hiện khả năng tổng hợp chéo."
+    },
+    {
+        "id": "q8_vague_01",
+        "category": "Vague Prompt",
+        "query": "Tôi có 5 tỷ nhàn rỗi. Mua gì bây giờ?",
+        "expected_behavior": "Từ chối phím hàng trực tiếp vì thiếu bối cảnh khẩu vị rủi ro. Yêu cầu khách hàng cung cấp thêm thông tin, đồng thời đưa ra bức tranh thị trường chung dựa trên tin tức."
+    },
+    {
+        "id": "q9_reasoning_01",
+        "category": "Complex Reasoning",
+        "query": "So sánh rủi ro giữa việc nắm giữ Trái phiếu doanh nghiệp bất động sản và Gửi tiết kiệm kỳ hạn 12 tháng dựa trên các bản tin vĩ mô gần nhất.",
+        "expected_behavior": "Đánh giá mức độ rủi ro hệ thống (qua tin SBV) để so sánh lợi suất/rủi ro giữa hai kênh tài sản, đưa ra kết luận logic rõ ràng."
+    },
+    {
+        "id": "q10_micro_macro_01",
+        "category": "Micro vs Macro",
+        "query": "Các thông báo gần đây của Bảo Tín Mạnh Hải về việc đóng cửa hàng có phản ánh rủi ro khủng hoảng của toàn thị trường vàng không, hay chỉ là cục bộ?",
+        "expected_behavior": "Phải phân định được đây là sự kiện vi mô (cục bộ của doanh nghiệp) và không gán ghép nó thành khủng hoảng vĩ mô nếu không có tin tức nào khác từ SBV xác nhận."
+    }
+]
