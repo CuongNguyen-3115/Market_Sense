@@ -1,7 +1,6 @@
 # 📈 MARKET-SENSE
 
 **Hệ thống AI Assistant: Phân tích Tâm lý Thị trường & Quản trị Rủi ro**
-*Dự án tham gia cuộc thi HACK <CX> TOGETHER 2026*
 
 ---
 
