@@ -1,0 +1,165 @@
+﻿id,category,query,context_relevance,groundedness,answer_relevance,eval_reason,expected_behavior,actual_answer
+q1_conflict_01,Conflict Resolution,"Hôm nay tôi đọc thấy Ngân hàng Nhà nước có động thái bơm tiền (tích cực), nhưng lại có tin một số ngân hàng lớn bị nợ xấu (tiêu cực). Tôi đang cầm 70% tỷ trọng cổ phiếu ngân hàng, tôi nên làm gì lúc này?",0.8,0.9,0.7,"Câu trả lời của AI đã cung cấp một số thông tin liên quan đến tình hình thị trường và đề xuất một số hành động cho khách hàng. Tuy nhiên, câu trả lời có thể được cải thiện bằng cách cung cấp thêm thông tin cụ thể về cách đa dạng hóa danh mục đầu tư và giảm thiểu rủi ro.","RAG phải trích xuất được cả tin vĩ mô (SBV) và tin vi mô (CafeF), sau đó cân bằng rủi ro, khuyên giảm tỷ trọng để an toàn hoặc theo dõi sát diễn biến nợ xấu thay vì mua thêm mù quáng.","Tổng quan thị trường:
+Hiện tại, thị trường chứng khoán đang có những tín hiệu trái chiều. Một mặt, có thông tin tích cực về việc các doanh nghiệp như HSC và Vĩnh Hoàn đang thực hiện các động thái tăng cường đầu tư và mua lại cổ phiếu quỹ, điều này có thể giúp tăng cường niềm tin của nhà đầu tư và tạo ra cơ hội tăng trưởng. Mặt khác, cũng có những thông tin tiêu cực liên quan đến vấn đề nợ xấu và phong tỏa tài khoản tại một số ngân hàng, điều này có thể gây ra sự bất an và giảm niềm tin của nhà đầu tư.
+
+Tác động đến danh mục của khách hàng:
+Với tỷ trọng cổ phiếu ngân hàng lên đến 70%, Quý khách có thể đang đối mặt với rủi ro cao nếu tình hình nợ xấu và phong tỏa tài khoản tại các ngân hàng tiếp tục diễn ra. Tuy nhiên, cũng cần lưu ý rằng không phải tất cả các ngân hàng đều bị ảnh hưởng và một số ngân hàng vẫn đang hoạt động ổn định. Việc HSC và Vĩnh Hoàn thực hiện các động thái tăng cường đầu tư và mua lại cổ phiếu quỹ có thể là một tín hiệu tích cực cho thị trường.
+
+Hành động khuyến nghị:
+Dựa trên thông tin hiện tại, tôi khuyến nghị Quý khách nên theo dõi thêm tình hình và không thực hiện bất kỳ hành động mua hoặc bán nào trong thời gian ngắn. Quý khách nên đánh giá lại danh mục đầu tư của mình và xem xét việc đa dạng hóa danh mục để giảm thiểu rủi ro. Ngoài ra, Quý khách cũng nên theo dõi chặt chẽ các thông tin về tình hình nợ xấu và phong tỏa tài khoản tại các ngân hàng để có thể đưa ra quyết định kịp thời.
+
+Nguồn tham khảo:
+- https://cafef.vn/dang-thuc-day-thu-hoi-tien-phong-toa-tai-scb-de-tra-cho-trai-chu-vu-van-thinh-phat-188260521134731339.chn
+- https://cafef.vn/mot-so-ton-tai-trong-hoat-dong-cho-vay-o-mot-ngan-hang-chi-nhanh-lang-son-188260520091621768.chn
+- https://cafef.vn/acb-cong-bo-thong-tin-co-dong-so-huu-tu-1-von-tro-len-188260520091320882.chn
+- https://cafef.vn/hsc-muon-vay-ngan-hang-han-muc-10000-ty-dong-de-lam-gi-188260519143229913.chn
+- https://cafef.vn/vinh-hoan-cua-ba-truong-thi-le-khanh-vua-chi-gan-1000-ty-mua-co-phieu-quy-188260519103115345.chn"
+q2_conflict_02,Conflict Resolution,"Chủ tịch công ty chứng khoán X vừa mua vào cổ phiếu, nhưng thanh khoản toàn thị trường lại đang cạn kiệt. Đây là rủi ro hay cơ hội?",0.8,0.7,0.9,"Câu trả lời của AI đã cung cấp một cái nhìn tổng quan về thị trường chứng khoán và đề cập đến các rủi ro cũng như cơ hội. Tuy nhiên, một số thông tin được cung cấp không hoàn toàn liên quan đến câu hỏi cụ thể về việc Chủ tịch công ty chứng khoán X mua vào cổ phiếu khi thanh khoản toàn thị trường đang cạn kiệt.","Phải nhận diện được sự mâu thuẫn giữa hành động cá nhân (Tích cực) và xu hướng vĩ mô (Tiêu cực), từ đó đưa ra lời khuyên thận trọng, không fomo.","Tổng quan thị trường:
+Thị trường chứng khoán hiện đang đối mặt với nhiều thách thức. Các bản tin gần đây cho thấy sự suy yếu của thị trường, với việc bán tháo cổ phiếu dầu khí và suy yếu của VN-Index. Ngoài ra, có nhiều cổ phiếu đang nằm sàn, và lượng cổ phiếu bán tại mức giá sàn là khá lớn. Tuy nhiên, cũng có những tín hiệu tích cực khi các chuyên gia chỉ ra các nhóm cổ phiếu còn nhiều dư địa và khuyến khích đầu tư vào những nhóm này.
+
+Tác động đến danh mục của khách hàng:
+Việc Chủ tịch công ty chứng khoán X mua vào cổ phiếu có thể là một tín hiệu tích cực, nhưng thanh khoản toàn thị trường lại đang cạn kiệt. Điều này có thể tạo ra rủi ro cho danh mục của Quý khách, vì sự thiếu thanh khoản có thể dẫn đến khó khăn khi mua hoặc bán cổ phiếu. Ngoài ra, sự suy yếu của thị trường và việc bán tháo cổ phiếu dầu khí cũng có thể ảnh hưởng đến giá trị của danh mục.
+
+Hành động khuyến nghị:
+Dựa trên các thông tin hiện tại, tôi khuyến nghị Quý khách nên theo dõi thêm tình hình thị trường và chờ đợi các tín hiệu rõ ràng hơn trước khi đưa ra quyết định đầu tư. Việc mua vào cổ phiếu khi thị trường đang suy yếu và thanh khoản cạn kiệt có thể là một rủi ro, nhưng cũng có thể là một cơ hội nếu Quý khách có thể tìm được các cổ phiếu có tiềm năng tăng trưởng. Tôi khuyến nghị Quý khách nên tập trung vào các nhóm cổ phiếu còn nhiều dư địa và có tiềm năng tăng trưởng, như được đề cập trong bản tin 5.
+
+Nguồn tham khảo:
+- https://cafef.vn/nha-dau-tu-ca-nhan-lai-du-dinh-khi-hang-loat-co-phieu-dau-khi-nam-san-188260519153538805.chn
+- https://cafef.vn/doanh-nghiep-xay-lap-dien-sap-phai-roi-san-hose-co-phieu-lap-tuc-nam-san-188260520105952059.chn
+- https://cafef.vn/chung-khoan-lap-dinh-tai-khoan-van-am-chuyen-gia-canh-bao-rui-ro-lon-188260519074149085.chn
+- https://cafef.vn/nam-bay-bay-muon-ban-toan-bo-hon-315000-co-phieu-quy-188260518142501181.chn
+- https://cafef.vn/giam-doc-chung-khoan-dragon-capital-goi-ten-nhom-co-phieu-dang-bi-bo-quen-giua-luc-vn-index-len-dinh-188260517213520802.chn"
+q3_hallucination_01,Hallucination Trap,Tin tức về việc Cục Dự trữ Liên bang Mỹ (FED) tăng lãi suất đêm qua ảnh hưởng thế nào đến thị trường Việt Nam?,0.8,0.7,0.9,"Câu trả lời của AI đã cung cấp một cái nhìn tổng quan về thị trường chứng khoán Việt Nam và tác động của việc FED tăng lãi suất. Tuy nhiên, một số thông tin không liên quan trực tiếp đến câu hỏi đã được đề cập, như tình hình phong tỏa tài khoản tại Ngân hàng SCB. Ngoài ra, AI đã đưa ra một số khuyến nghị hợp lý cho khách hàng.","Nếu trong ChromaDB không có tin nào về FED trong 7-30 ngày qua, RAG bắt buộc phải trả lời 'Hiện không có dữ liệu về FED trong hệ thống', tuyệt đối không được tự suy diễn bằng kiến thức cũ.","Tổng quan thị trường:
+Hiện tại, thị trường chứng khoán Việt Nam đang chịu áp lực điều chỉnh sau nhịp phục hồi mạnh trước đó, như được báo cáo trong bản tin 1 của CafeF. Điều này cho thấy sự bất ổn và rủi ro trên thị trường. Ngoài ra, tin tức về lạm phát nóng, lãi suất cao và xung đột Iran cũng gây lo ngại cho thị trường tài chính toàn cầu, như được đề cập trong bản tin 2 của CafeF. Tuy nhiên, cũng có tin tức tích cực về việc một doanh nghiệp chuẩn bị chi trả cổ tức 30% bằng tiền mặt, như được báo cáo trong bản tin 3 của CafeF.
+
+Tác động đến danh mục của khách hàng:
+Việc Cục Dự trữ Liên bang Mỹ (FED) tăng lãi suất có thể gây ra sự bất ổn trên thị trường tài chính toàn cầu, bao gồm cả thị trường chứng khoán Việt Nam. Điều này có thể dẫn đến giảm giá trị của các tài sản và dòng tiền. Tuy nhiên, tin tức về cổ tức cao của một doanh nghiệp có thể giúp thúc đẩy tăng trưởng tài sản và dòng tiền. Ngoài ra, tình hình phong tỏa tài khoản và yêu cầu trả tiền cho trái chủ tại Ngân hàng SCB cũng có thể gây ra sự bất an và giảm niềm tin của nhà đầu tư.
+
+Hành động khuyến nghị:
+Dựa trên dữ liệu hiện tại, tôi khuyến nghị Quý khách nên theo dõi thêm tình hình thị trường và chờ đợi thông tin mới trước khi đưa ra quyết định đầu tư. Việc tăng lãi suất của FED có thể gây ra sự bất ổn trên thị trường, nhưng cũng có thể tạo ra cơ hội cho các nhà đầu tư thông minh. Tôi cũng khuyến nghị Quý khách nên đa dạng hóa danh mục đầu tư để giảm thiểu rủi ro.
+
+Nguồn tham khảo:
+- https://cafef.vn/chung-khoan-viet-nam-gong-minh-giua-luc-thi-truong-chau-a-do-lua-188260515184509181.chn
+- https://cafef.vn/chung-khoan-the-gioi-do-lua-sau-vu-elon-musk-thua-kien-chan-dong-188260519154458003.chn
+- https://cafef.vn/mot-doanh-nghiep-chuan-bi-lan-chot-co-tuc-30-bang-tien-mat-18826051922121562.chn
+- https://cafef.vn/dang-thuc-day-thu-hoi-tien-phong-toa-tai-scb-de-tra-cho-trai-chu-vu-van-thinh-phat-188260521134731339.chn
+- https://cafef.vn/thi-truong-tien-so-hom-nay-19-5-nha-dau-tu-hoang-loan-188260519212735247.chn"
+q4_hallucination_02,Hallucination Trap,"Tôi nghe đồn Chủ tịch ngân hàng SHB sắp từ nhiệm, tin này có đúng không và tôi có nên bán tháo cổ phiếu SHB không?",0,0,0,Câu trả lời không giải quyết trực tiếp Câu hỏi về việc Chủ tịch ngân hàng SHB sắp từ nhiệm và không có thông tin liên quan trong Context.,"RAG phải tìm trong VectorDB. Nếu không có tin, phải khẳng định đây là tin đồn không có cơ sở dữ liệu xác nhận, khuyên khách hàng bình tĩnh giữ danh mục.","Tổng quan thị trường:
+Dựa trên các bản tin thị trường mới nhất, chúng tôi thấy rằng có nhiều thông tin tích cực về các công ty và tổ chức tài chính. Ví dụ, MB mua lại hơn 5 triệu cổ phiếu MBS, HSC muốn vay ngân hàng hạn mức 10.000 tỷ đồng để đầu tư, kinh doanh chứng khoán, và VNDirect sắp trả cổ tức tỷ lệ 5%. Những thông tin này cho thấy sự tin tưởng vào tương lai của các công ty và có thể tăng giá cổ phiếu.
+
+Tuy nhiên, cũng có thông tin tiêu cực như cổ đông lớn Novaland bán ra hàng triệu cổ phiếu NVL khi giá tăng ""bốc đầu"" 80%. Điều này thể hiện sự lo ngại về khả năng tăng trưởng của cổ phiếu NVL.
+
+Tác động đến danh mục của khách hàng:
+Về thông tin Chủ tịch ngân hàng SHB sắp từ nhiệm, chúng tôi không thấy bất kỳ thông tin nào về vấn đề này trong các bản tin thị trường mới nhất. Do đó, chúng tôi không thể đưa ra đánh giá chính xác về tác động của thông tin này đến danh mục của Quý khách.
+
+Tuy nhiên, nếu Quý khách đang nắm giữ cổ phiếu SHB, chúng tôi khuyến nghị nên theo dõi thêm thông tin về tình hình lãnh đạo của ngân hàng SHB và tác động của nó đến giá cổ phiếu.
+
+Hành động khuyến nghị:
+Dựa trên dữ liệu hiện tại, chưa có tín hiệu rõ ràng về việc bán tháo cổ phiếu SHB. Chúng tôi khuyến nghị Quý khách nên theo dõi thêm thông tin về tình hình lãnh đạo của ngân hàng SHB và tác động của nó đến giá cổ phiếu trước khi đưa ra quyết định mua hoặc bán.
+
+Nguồn tham khảo:
+- https://cafef.vn/mb-mua-lai-hon-5-trieu-co-phieu-mbs-188260519143515713.chn
+- https://cafef.vn/co-dong-lon-novaland-ban-ra-hang-trieu-co-phieu-nvl-khi-gia-tang-boc-dau-80-188260521113057942.chn
+- https://cafef.vn/hsc-muon-vay-ngan-hang-han-muc-10000-ty-dong-de-lam-gi-188260519143229913.chn
+- https://cafef.vn/dong-thai-moi-nhat-cua-bau-duc-sau-tuyen-bo-ai-co-tien-cu-mua-hag-giong-toi-lo-thi-cu-keu-toi-ra-ma-chui-188260520111230069.chn
+- https://cafef.vn/vndirect-sap-tra-co-tuc-ty-le-5-tap-doan-ipa-nhan-gan-200-ty-dong-18826052110185835.chn"
+q5_cross_domain_01,Cross-domain / Out of Scope,"Thị trường tiền số (Bitcoin) đang lao dốc, nó có kéo sập danh mục trái phiếu chính phủ của tôi không?",0.8,0.7,0.9,"Câu trả lời của AI đã cung cấp một số thông tin liên quan đến thị trường tiền số và tài chính, nhưng không giải quyết trực tiếp mối quan hệ giữa thị trường tiền số và danh mục trái phiếu chính phủ. Tuy nhiên, AI đã đưa ra một số khuyến nghị hợp lý cho khách hàng.","Nhận diện Bitcoin nằm ngoài phạm vi dữ liệu tài chính chính thống đã cào. Khẳng định trái phiếu chính phủ là tài sản an toàn, ít bị ảnh hưởng bởi thị trường tiền số.","Tổng quan thị trường:
+Hiện tại, thị trường tiền số đang có những biến động nhất định, với giá Bitcoin có thể tăng hoặc giảm tùy thuộc vào việc giữ vững mốc 82.000 USD. Tuy nhiên, các bản tin khác cho thấy có những yếu tố ảnh hưởng đến thị trường tài chính toàn cầu, bao gồm lạm phát nóng, lãi suất cao và xung đột Iran. Ngoài ra, có những thông tin liên quan đến việc phong tỏa tài khoản và yêu cầu trả tiền cho trái chủ tại Ngân hàng SCB, cũng như thông tin về cổ tức của FPT.
+
+Tác động đến danh mục của khách hàng:
+Danh mục trái phiếu chính phủ của Quý khách có thể không bị ảnh hưởng trực tiếp bởi biến động của thị trường tiền số. Tuy nhiên, các yếu tố ảnh hưởng đến thị trường tài chính toàn cầu, như lạm phát nóng và lãi suất cao, có thể gây ra sự bất an và giảm niềm tin của nhà đầu tư vào thị trường trái phiếu. Việc phong tỏa tài khoản và yêu cầu trả tiền cho trái chủ tại Ngân hàng SCB cũng có thể gây ra sự bất an, nhưng không trực tiếp ảnh hưởng đến danh mục trái phiếu chính phủ của Quý khách.
+
+Hành động khuyến nghị:
+Dựa trên thông tin hiện tại, tôi khuyến nghị Quý khách nên theo dõi thêm tình hình thị trường và không thực hiện bất kỳ hành động mua hoặc bán nào trong thời gian này. Việc giữ vững danh mục hiện tại và chờ đợi sự ổn định của thị trường có thể là một chiến lược hợp lý. Tuy nhiên, nếu Quý khách có bất kỳ lo ngại hoặc câu hỏi nào, xin vui lòng liên hệ với tôi để được tư vấn thêm.
+
+Nguồn tham khảo:
+- https://cafef.vn/thi-truong-tien-so-hom-nay-15-5-gia-bitcoin-sap-roi-manh-188260515212557351.chn
+- https://cafef.vn/chu-tich-pham-minh-huong-co-hoi-lon-chua-tung-co-dang-mo-ra-vndirect-chuan-bi-comeback-188260518224957016.chn
+- https://cafef.vn/chung-khoan-the-gioi-do-lua-sau-vu-elon-musk-thua-kien-chan-dong-188260519154458003.chn
+- https://cafef.vn/dang-thuc-day-thu-hoi-tien-phong-toa-tai-scb-de-tra-cho-trai-chu-vu-van-thinh-phat-188260521134731339.chn
+- https://cafef.vn/ngay-trong-tuan-toi-fpt-se-chot-quyen-nhan-co-tuc-so-tien-du-chi-1700-ty-188260519214923637.chn"
+q6_cross_retrieval_01,Cross-domain Retrieval,Tỷ giá USD/VND liên tục tăng trong tuần qua. Điều này có lợi cho nhóm cổ phiếu xuất khẩu thủy sản hay nhóm bán lẻ? Giải thích dựa trên tin tức hiện tại.,0.8,0.7,0.9,"Câu trả lời của AI có liên quan đến câu hỏi và dựa trên thông tin từ các bản tin thị trường. Tuy nhiên, AI không cung cấp thông tin cụ thể về lợi ích của tỷ giá USD/VND tăng đối với từng nhóm cổ phiếu và không đưa ra khuyến nghị đầu tư rõ ràng.","ChromaDB phải lấy được tin vĩ mô về tỷ giá (SBV). AI phải lập luận được xuất khẩu hưởng lợi, bán lẻ (nhập khẩu) gặp bất lợi dựa trên context.","Tổng quan thị trường:
+Dựa trên các bản tin thị trường gần đây, có thể thấy rằng thị trường chứng khoán Việt Nam đang có những tín hiệu tăng trưởng, với nhiều chuyên gia dự báo VN-Index sẽ tiếp tục tăng trong tuần tới. Tuy nhiên, cũng có những tín hiệu rung lắc và rủi ro ngắn hạn do xung đột Trung Đông và áp lực tỷ giá. Giá vàng cũng biến động mạnh, phản ánh tâm lý kém ổn định của nhà đầu tư.
+
+Tác động đến danh mục của khách hàng:
+Đối với nhóm cổ phiếu xuất khẩu thủy sản, việc tỷ giá USD/VND tăng có thể mang lại lợi ích vì giá hàng hóa xuất khẩu sẽ tăng khi tỷ giá tăng. Tuy nhiên, cần xem xét các yếu tố khác như giá nguyên liệu đầu vào, chi phí sản xuất và nhu cầu thị trường. Đối với nhóm bán lẻ, việc tỷ giá tăng có thể làm tăng giá hàng hóa nhập khẩu, dẫn đến tăng chi phí và giảm lợi nhuận.
+
+Hành động khuyến nghị:
+Dựa trên dữ liệu hiện tại, chưa có tín hiệu rõ ràng về việc nên đầu tư vào nhóm cổ phiếu xuất khẩu thủy sản hay nhóm bán lẻ. Tuy nhiên, nếu Quý khách đang xem xét đầu tư vào nhóm cổ phiếu xuất khẩu thủy sản, có thể theo dõi thêm các bản tin về tình hình xuất khẩu và tỷ giá để có quyết định chính xác. Đối với nhóm bán lẻ, cần theo dõi chặt chẽ các yếu tố như giá hàng hóa nhập khẩu, chi phí sản xuất và nhu cầu thị trường để có thể điều chỉnh danh mục đầu tư phù hợp.
+
+Nguồn tham khảo:
+- https://cafef.vn/nhom-co-phieu-nao-giau-tiem-nang-tang-truong-thoi-gian-toi-188260518104217227.chn
+- https://cafef.vn/chuyen-gia-xuat-hien-tin-hieu-rung-lac-chon-loc-nhom-co-phieu-hut-tien-188260519074316348.chn
+- https://cafef.vn/quy-vang-lon-nhat-the-gioi-tro-lai-gom-14-ta-vang-188260519113514554.chn
+- https://cafef.vn/chung-khoan-du-bao-tiep-da-tang-chuyen-gia-khuyen-cao-gi-188260516191442632.chn
+- https://cafef.vn/tung-tang-toi-60-roi-roi-25-chi-trong-vai-thang-chuyen-gi-dang-xay-ra-voi-vang-188260519094708143.chn"
+q7_cross_retrieval_02,Cross-domain Retrieval,"Ngân hàng Nhà nước vừa phát hành tín phiếu để hút tiền về. Trong các tin tức tuần qua, có doanh nghiệp nào vẫn cho thấy tín hiệu khả quan để đầu tư không?",0.8,0.7,0.6,"Câu trả lời của AI có liên quan đến câu hỏi và dựa trên các bản tin cung cấp, nhưng không đưa ra một câu trả lời cụ thể và trực tiếp về việc có doanh nghiệp nào vẫn cho thấy tín hiệu khả quan để đầu tư. Câu trả lời cũng không hoàn toàn bám sát vào các bản tin cung cấp.","RAG phải truy xuất được tin hút tiền (SBV) và tìm ra ít nhất 1 tin doanh nghiệp tích cực (CafeF) để gợi ý giải ngân cục bộ, thể hiện khả năng tổng hợp chéo.","Tổng quan thị trường: 
+Trong tuần qua, thị trường chứng khoán Việt Nam đã chứng kiến sự biến động với nhiều tin tức khác nhau. Một số bản tin cho thấy sự bất an và giảm niềm tin của nhà đầu tư vào một số doanh nghiệp, chẳng hạn như Ngân hàng SCB và một số cổ phiếu thép thua lỗ liên tiếp. Tuy nhiên, cũng có những bản tin dự báo về sự quay trở lại của khối ngoại trong giai đoạn từ quý III, quý IV/2026.
+
+Tác động đến danh mục của khách hàng: 
+Dựa trên các bản tin trên, có thể thấy rằng thị trường chứng khoán đang đối mặt với nhiều rủi ro và thách thức. Sự bất an và giảm niềm tin của nhà đầu tư vào một số doanh nghiệp có thể gây ra sự giảm giá cổ phiếu và ảnh hưởng đến danh mục đầu tư của Quý khách. Tuy nhiên, cũng có những tín hiệu tích cực về sự quay trở lại của khối ngoại, điều này có thể mang lại cơ hội đầu tư cho Quý khách.
+
+Hành động khuyến nghị: 
+Dựa trên dữ liệu hiện tại, chưa có tín hiệu rõ ràng về việc nên đầu tư vào cổ phiếu nào. Tuy nhiên, Quý khách có thể xem xét việc theo dõi thêm các bản tin và phân tích kỹ lưỡng trước khi đưa ra quyết định đầu tư. Ngoài ra, Quý khách cũng nên cân nhắc việc đa dạng hóa danh mục đầu tư để giảm thiểu rủi ro.
+
+Nguồn tham khảo:
+- https://cafef.vn/pho-tong-giam-doc-bsc-ly-giai-nguyen-nhan-khoi-ngoai-miet-mai-ban-rong-tren-ttck-viet-nam-188260519102010559.chn
+- https://cafef.vn/dang-thuc-day-thu-hoi-tien-phong-toa-tai-scb-de-tra-cho-trai-chu-vu-van-thinh-phat-188260521134731339.chn
+- https://cafef.vn/mot-co-phieu-thep-bat-ngo-chay-hang-du-thua-lo-trien-mien-18826051622544349.chn
+- https://cafef.vn/chung-khoan-lap-dinh-tai-khoan-van-am-chuyen-gia-canh-bao-rui-ro-lon-188260519074149085.chn
+- https://cafef.vn/vn-index-neo-dinh-nhung-tai-khoan-van-do-chuyen-gia-dua-4-khuyen-nghi-quan-trong-cho-nha-dau-tu-giua-song-gio-thi-truong-188260519235111923.chn"
+q8_vague_01,Vague Prompt,Tôi có 5 tỷ nhàn rỗi. Mua gì bây giờ?,0.8,0.9,0.7,"Câu trả lời của AI có liên quan đến câu hỏi và dựa trên thông tin từ các bản tin thị trường. Tuy nhiên, AI có thể cung cấp thêm thông tin cụ thể về rủi ro và lợi ích của từng lựa chọn đầu tư để giúp khách hàng đưa ra quyết định sáng suốt hơn.","Từ chối phím hàng trực tiếp vì thiếu bối cảnh khẩu vị rủi ro. Yêu cầu khách hàng cung cấp thêm thông tin, đồng thời đưa ra bức tranh thị trường chung dựa trên tin tức.","Tổng quan thị trường:
+Hiện tại, thị trường chứng khoán đang có những tín hiệu tích cực với nhiều bản tin cho biết các công ty lớn như VNDirect, DXG và các ""siêu cổ phiếu"" khác đang có những động thái tăng trưởng mạnh mẽ. Việc VNDirect trả cổ tức tỷ lệ 5% và DXG phát hành 155,7 triệu cổ phiếu thưởng cho thấy sự tự tin của các doanh nghiệp vào tương lai và khả năng tăng trưởng của họ. Ngoài ra, thông tin về lịch chốt quyền cổ tức trong tuần 18–22/5 cũng cho thấy nhiều doanh nghiệp đang có kế hoạch trả cổ tức bằng tiền mặt với mức cao nhất là 83%.
+
+Tuy nhiên, cũng có một số tín hiệu tiêu cực như việc cổ đông lớn bán ra 5 triệu cổ phiếu SJS của SJ Group, có thể gây lo ngại về sự giảm giá và ảnh hưởng đến thị trường.
+
+Tác động đến danh mục của khách hàng:
+Với 5 tỷ nhàn rỗi, Quý khách có thể xem xét đầu tư vào các công ty có tiềm năng tăng trưởng mạnh mẽ như VNDirect, DXG và các ""siêu cổ phiếu"" khác. Việc đầu tư vào các công ty này có thể mang lại lợi nhuận cao trong dài hạn. Tuy nhiên, cũng cần lưu ý đến rủi ro khi đầu tư vào thị trường chứng khoán và cần phân tích kỹ lưỡng trước khi đưa ra quyết định.
+
+Hành động khuyến nghị:
+Dựa trên các bản tin thị trường, tôi khuyến nghị Quý khách xem xét đầu tư vào các công ty có tiềm năng tăng trưởng mạnh mẽ như VNDirect, DXG và các ""siêu cổ phiếu"" khác. Tuy nhiên, cũng cần lưu ý đến rủi ro và cần phân tích kỹ lưỡng trước khi đưa ra quyết định. Ngoài ra, cũng có thể xem xét đầu tư vào các quỹ đầu tư chứng khoán để đa dạng hóa danh mục và giảm thiểu rủi ro.
+
+Nguồn tham khảo:
+- https://cafef.vn/co-dong-lon-ban-ra-5-trieu-co-phieu-sjs-cua-sj-group-188260519090451575.chn
+- https://cafef.vn/vndirect-sap-tra-co-tuc-ty-le-5-tap-doan-ipa-nhan-gan-200-ty-dong-18826052110185835.chn
+- https://cafef.vn/dxg-chot-quyen-phan-bo-1557-trieu-co-phieu-thuong-18826052009103237.chn
+- https://cafef.vn/ly-do-cac-sieu-co-phieu-phi-ma-khong-ngung-18826052110394636.chn
+- https://cafef.vn/lich-chot-quyen-co-tuc-trong-tuan-1822-5-co-tuc-tien-mat-cao-nhat-83-mot-ngan-hang-chi-gan-5000-ty-dong-tra-co-tuc-18826051622340662.chn"
+q9_reasoning_01,Complex Reasoning,So sánh rủi ro giữa việc nắm giữ Trái phiếu doanh nghiệp bất động sản và Gửi tiết kiệm kỳ hạn 12 tháng dựa trên các bản tin vĩ mô gần nhất.,0.8,0.7,0.9,"Câu trả lời của AI đã cung cấp một số thông tin liên quan đến thị trường và rủi ro, nhưng có thể cải thiện hơn nữa bằng cách cung cấp phân tích sâu sắc hơn về các bản tin và tác động cụ thể đến Trái phiếu doanh nghiệp bất động sản và Gửi tiết kiệm kỳ hạn 12 tháng.","Đánh giá mức độ rủi ro hệ thống (qua tin SBV) để so sánh lợi suất/rủi ro giữa hai kênh tài sản, đưa ra kết luận logic rõ ràng.","Tổng quan thị trường:
+Hiện tại, thị trường đang có một số tín hiệu rung lắc và rủi ro ngắn hạn, đặc biệt là trong bối cảnh xung đột Trung Đông kéo dài và áp lực tỷ giá. Một số công ty, như Xếp dỡ Hải An, đang đối mặt với thách thức về lợi nhuận và phải phát hành trái phiếu để huy động vốn. Tuy nhiên, cũng có một số thông tin trung lập về hoạt động cho vay của các ngân hàng và cắt giảm ngành nghề đầu tư kinh doanh có điều kiện.
+
+Tác động đến danh mục của khách hàng:
+Khi so sánh rủi ro giữa việc nắm giữ Trái phiếu doanh nghiệp bất động sản và Gửi tiết kiệm kỳ hạn 12 tháng, cần xem xét các yếu tố sau:
+- Trái phiếu doanh nghiệp bất động sản: Rủi ro cao hơn do phụ thuộc vào tình hình tài chính của công ty phát hành và tình hình thị trường bất động sản. Nếu công ty gặp khó khăn về tài chính, khả năng trả nợ sẽ giảm, dẫn đến rủi ro mất vốn.
+- Gửi tiết kiệm kỳ hạn 12 tháng: Rủi ro thấp hơn do được bảo đảm bởi hệ thống bảo hiểm tiền gửi và lãi suất cố định.
+
+Hành động khuyến nghị:
+Dựa trên các thông tin hiện tại, tôi khuyến nghị Quý khách nên cân nhắc giữa lợi nhuận và rủi ro khi đầu tư. Nếu Quý khách đang tìm kiếm một khoản đầu tư an toàn và ổn định, gửi tiết kiệm kỳ hạn 12 tháng có thể là một lựa chọn tốt. Tuy nhiên, nếu Quý khách sẵn sàng chấp nhận rủi ro cao hơn để追 đuổi lợi nhuận cao hơn, thì trái phiếu doanh nghiệp bất động sản có thể là một lựa chọn. Tuy nhiên, cần phải nghiên cứu kỹ lưỡng về tình hình tài chính của công ty phát hành và tình hình thị trường trước khi đưa ra quyết định.
+
+Nguồn tham khảo:
+- https://cafef.vn/mot-so-ton-tai-trong-hoat-dong-cho-vay-o-mot-ngan-hang-chi-nhanh-lang-son-188260520091621768.chn
+- https://cafef.vn/xep-do-hai-an-dat-muc-tieu-loi-nhuan-giam-11-phat-hanh-gan-1900-ty-dong-trai-phieu-188260518142157699.chn
+- https://cafef.vn/chuyen-gia-xuat-hien-tin-hieu-rung-lac-chon-loc-nhom-co-phieu-hut-tien-188260519074316348.chn
+- https://cafef.vn/chung-khoan-bao-hiem-vang-xang-dau-bat-dong-san-thuoc-danh-muc-kinh-doanh-co-dieu-kien-188260519180734072.chn
+- https://cafef.vn/tu-1-7-2026-chi-con-142-nganh-nghe-dau-tu-kinh-doanh-co-dieu-kien-188260519175337914.chn"
+q10_micro_macro_01,Micro vs Macro,"Các thông báo gần đây của Bảo Tín Mạnh Hải về việc đóng cửa hàng có phản ánh rủi ro khủng hoảng của toàn thị trường vàng không, hay chỉ là cục bộ?",0.8,0.7,0.9,"Câu trả lời của AI đã cung cấp một số thông tin liên quan đến thị trường vàng và các yếu tố ảnh hưởng đến nó, nhưng cũng có một số phần không trực tiếp liên quan đến câu hỏi về việc đóng cửa hàng của Bảo Tín Mạnh Hải. Tuy nhiên, AI đã cố gắng phân tích và đưa ra khuyến nghị dựa trên thông tin có sẵn.",Phải phân định được đây là sự kiện vi mô (cục bộ của doanh nghiệp) và không gán ghép nó thành khủng hoảng vĩ mô nếu không có tin tức nào khác từ SBV xác nhận.,"Tổng quan thị trường:
+Dựa trên các bản tin thị trường gần đây, có thể thấy rằng thị trường vàng đang biến động mạnh do tâm lý của người mua và bán. Giá vàng đã tăng tới 60% rồi giảm 25% chỉ trong vài tháng, cho thấy sự không ổn định của thị trường. Ngoài ra, quỹ vàng lớn nhất thế giới đã trở lại ""gom"" 14 tạ vàng, cho thấy sự quan tâm của nhà đầu tư đến vàng vẫn còn.
+
+Tuy nhiên, cũng có những tin tức không liên quan trực tiếp đến thị trường vàng, như việc phong tỏa tài khoản tại Ngân hàng SCB và yêu cầu trả tiền cho trái chủ, cũng như dự báo về sự quay trở lại của khối ngoại trên thị trường chứng khoán Việt Nam. Những tin tức này có thể gây ra sự bất an và giảm niềm tin của nhà đầu tư vào thị trường tài chính.
+
+Tác động đến danh mục của khách hàng:
+Dựa trên các bản tin thị trường, có thể thấy rằng thị trường vàng đang biến động mạnh và có thể tiếp tục biến động trong tương lai. Điều này có thể ảnh hưởng đến danh mục đầu tư của Quý khách, đặc biệt nếu Quý khách đang đầu tư vào vàng hoặc các tài sản liên quan đến vàng.
+
+Tuy nhiên, cũng cần lưu ý rằng các bản tin thị trường không cho thấy rõ ràng rằng việc đóng cửa hàng của Bảo Tín Mạnh Hải là một tín hiệu của rủi ro khủng hoảng toàn thị trường vàng. Có thể đây chỉ là một vấn đề cục bộ và không ảnh hưởng đến toàn bộ thị trường vàng.
+
+Hành động khuyến nghị:
+Dựa trên phân tích trên, tôi khuyến nghị Quý khách nên theo dõi thêm các bản tin thị trường và phân tích kỹ lưỡng trước khi đưa ra quyết định đầu tư. Nếu Quý khách đang đầu tư vào vàng hoặc các tài sản liên quan đến vàng, nên xem xét lại danh mục đầu tư và cân nhắc việc đa dạng hóa danh mục để giảm thiểu rủi ro.
+
+Ngoài ra, cũng nên lưu ý đến các tin tức không liên quan trực tiếp đến thị trường vàng, như việc phong tỏa tài khoản tại Ngân hàng SCB và yêu cầu trả tiền cho trái chủ, cũng như dự báo về sự quay trở lại của khối ngoại trên thị trường chứng khoán Việt Nam. Những tin tức này có thể gây ra sự bất an và giảm niềm tin của nhà đầu tư vào thị trường tài chính.
+
+Nguồn tham khảo:
+- https://cafef.vn/tung-tang-toi-60-roi-roi-25-chi-trong-vai-thang-chuyen-gi-dang-xay-ra-voi-vang-188260519094708143.chn
+- https://cafef.vn/quy-vang-lon-nhat-the-gioi-tro-lai-gom-14-ta-vang-188260519113514554.chn
+- https://cafef.vn/dang-thuc-day-thu-hoi-tien-phong-toa-tai-scb-de-tra-cho-trai-chu-vu-van-thinh-phat-188260521134731339.chn
+- https://cafef.vn/pho-tong-giam-doc-bsc-ly-giai-nguyen-nhan-khoi-ngoai-miet-mai-ban-rong-tren-ttck-viet-nam-188260519102010559.chn
+- https://www.sbv.gov.vn/vi/web/sbv_portal/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-ph%E1%BA%A1m-ti%E1%BA%BFn-d%C5%A9ng-b%E1%BA%A3o-v%E1%BB%87-ni%E1%BB%81m-tin-s%E1%BB%"

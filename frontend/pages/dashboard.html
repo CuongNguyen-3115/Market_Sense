@@ -1,0 +1,309 @@
+    <!-- <!doctype html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Market Sense - Dashboard</title>
+        <meta
+        name="description"
+        content="Dashboard sentiment thị trường 30 ngày gần đây."
+        />
+        <link rel="stylesheet" href="../assets/css/base.css" />
+        <link rel="stylesheet" href="../assets/css/layout.css" />
+        <link rel="stylesheet" href="../assets/css/components.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <header>
+        <div>
+            <p>Market Sense</p>
+            <h1>Dashboard Sentiment Thị Trường</h1>
+            <p>Theo dõi xu hướng tâm lý thị trường theo khoảng thời gian tùy chỉnh từ dữ liệu đã xử lý.</p>
+        </div>
+
+        <nav aria-label="Điều hướng chính">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./dashboard.html" aria-current="page">Dashboard</a></li>
+            <li><a href="./assistant.html">Assistant</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+        <section aria-labelledby="dashboard-controls-title">
+            <h2 id="dashboard-controls-title">Bộ lọc hiển thị</h2>
+            <form>
+            <fieldset>
+                <legend>Tùy chọn dữ liệu</legend>
+
+                <label for="start-date">Từ ngày:</label>
+                <input type="date" id="start-date" name="start-date" required />
+
+                <label for="end-date">Đến ngày:</label>
+                <input type="date" id="end-date" name="end-date" required />
+
+                <button type="button">Làm mới dữ liệu</button>
+            </fieldset>
+            </form>
+        </section>
+
+        <section aria-labelledby="system-status-title">
+            <h2 id="system-status-title">Trạng thái hệ thống</h2>
+            <ul>
+            <li>Kafka: <strong>Chưa kiểm tra</strong></li>
+            <li>MongoDB: <strong>Chưa kiểm tra</strong></li>
+            <li>ChromaDB: <strong>Chưa kiểm tra</strong></li>
+            <li>LLM API: <strong>Chưa kiểm tra</strong></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="kpi-title">
+            <h2 id="kpi-title">Chỉ số tổng quan (KPI)</h2>
+            <article>
+            <h3>Tổng số bản tin</h3>
+            <p>--</p>
+            <p id="kpi-date-range">Theo khoảng thời gian chọn</p>
+            </article>
+            <article>
+            <h3>Tỷ lệ Positive</h3>
+            <p>--%</p>
+            <p> bản tin</p>
+            </article>
+            <article>
+            <h3>Tỷ lệ Negative</h3>
+            <p>--%</p>
+            <p> bản tin</p>
+            </article>
+            <article>
+            <h3>Tỷ lệ Neutral</h3>
+            <p>--%</p>
+            <p> bản tin</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="trend-overview-title">
+            <h2 id="trend-overview-title">Tổng quan xu hướng</h2>
+            <p>Xu hướng hiện tại: <strong>Chưa có dữ liệu</strong></p>
+            <p>Cập nhật lúc: <time id="update-time" datetime="">--:--</time></p>
+        </section>
+
+        <section aria-labelledby="chart-title">
+            <h2 id="chart-title">Biểu đồ sentiment index</h2>
+            <p>
+              Theo dõi biến động Daily Index và các đường trung bình động (SMA).
+            </p>
+            <div style="height: 350px; position: relative;">
+              <canvas id="sentimentChart"></canvas>
+            </div>
+        </section>
+
+        <section aria-labelledby="momentum-title">
+            <h2 id="momentum-title">Động lượng và nhãn xu hướng</h2>
+            <article>
+            <h3>Momentum gần nhất</h3>
+            <p>--</p>
+            </article>
+            <article>
+            <h3>Trend label</h3>
+            <p>--</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="news-feed-title">
+            <h2 id="news-feed-title">Tin tức mới nhất</h2>
+            <p>Các bản tin gần nhất đã qua xử lý sentiment.</p>
+            <ul>
+            <li>
+                <article>
+                <h3>[Tiêu đề bản tin mẫu]</h3>
+                <p>Nguồn: -- | Sentiment: -- | Thời gian: --</p>
+                <p>Tóm tắt ngắn...</p>
+                <p><a href="#" rel="noopener noreferrer">Xem nguồn</a></p>
+                </article>
+            </li>
+            <li>
+                <article>
+                <h3>[Tiêu đề bản tin mẫu]</h3>
+                <p>Nguồn: -- | Sentiment: -- | Thời gian: --</p>
+                <p>Tóm tắt ngắn...</p>
+                <p><a href="#" rel="noopener noreferrer">Xem nguồn</a></p>
+                </article>
+            </li>
+            <li>
+                <article>
+                <h3>[Tiêu đề bản tin mẫu]</h3>
+                <p>Nguồn: -- | Sentiment: -- | Thời gian: --</p>
+                <p>Tóm tắt ngắn...</p>
+                <p><a href="#" rel="noopener noreferrer">Xem nguồn</a></p>
+                </article>
+            </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="api-debug-title">
+            <h2 id="api-debug-title">API Debug Panel (cho demo)</h2>
+            <p>Trạng thái gọi API timeseries: Chưa thực thi</p>
+            <p>Trạng thái gọi API summary: Chưa thực thi</p>
+            <p>Trạng thái gọi API news: Chưa thực thi</p>
+        </section>
+        </main>
+
+        <footer>
+        <p>Market Sense Demo - Dashboard Skeleton (Phase 2)</p>
+        </footer>
+
+        <script type="module" src="../assets/js/pages/dashboard.js"></script>
+    </body>
+    </html> -->
+
+    <!doctype html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Market Sense - Dashboard</title>
+        <meta name="description" content="Dashboard sentiment thị trường 30 ngày gần đây." />
+        <link rel="stylesheet" href="../assets/css/base.css" />
+        <link rel="stylesheet" href="../assets/css/layout.css" />
+        <link rel="stylesheet" href="../assets/css/components.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body class="minimal-theme">
+        <div class="dashboard-wrapper">
+            
+            <header class="top-navbar">
+                <div class="brand">
+                    <h1>Market Sense</h1>
+                    <nav class="nav-links" aria-label="Điều hướng chính">
+                        <a href="../index.html">Home</a>
+                        <a href="./dashboard.html" class="active" aria-current="page">Dashboard</a>
+                        <a href="./assistant.html">Assistant</a>
+                    </nav>
+                </div>
+                
+                <div class="system-status">
+                    <ul class="status-list">
+                        <li>Kafka: <strong>Chưa kiểm tra</strong></li>
+                        <li>MongoDB: <strong>Chưa kiểm tra</strong></li>
+                        <li>ChromaDB: <strong>Chưa kiểm tra</strong></li>
+                        <li>LLM: <strong>Chưa kiểm tra</strong></li>
+                    </ul>
+                </div>
+            </header>
+    
+            <main class="main-content">
+                <section class="page-header">
+                    <h2>Sentiment Overview</h2>
+                    <form class="date-filter">
+                        <div class="filter-group">
+                            <label for="start-date">Từ ngày:</label>
+                            <input type="date" id="start-date" name="start-date" required />
+                        </div>
+                        <div class="filter-group">
+                            <label for="end-date">Đến ngày:</label>
+                            <input type="date" id="end-date" name="end-date" required />
+                        </div>
+                        <button type="button" class="btn-primary">Làm mới</button>
+                    </form>
+                </section>
+    
+                <section class="kpi-grid" style="grid-template-columns: repeat(5, 1fr);">
+                    <h2 id="kpi-title" class="sr-only" style="display: none;">Chỉ số tổng quan (KPI)</h2>
+                    
+                    <article class="kpi-card">
+                        <h3 class="kpi-title">Tổng số bản tin</h3>
+                        <p class="kpi-value">--</p>
+                        <p class="kpi-subtext" id="kpi-date-range">Theo thời gian chọn</p>
+                    </article>
+                    
+                    <article class="kpi-card">
+                        <h3 class="kpi-title">Tỷ lệ Positive</h3>
+                        <p class="kpi-value text-positive">--%</p>
+                        <p class="kpi-subtext"></p>
+                    </article>
+                    
+                    <article class="kpi-card">
+                        <h3 class="kpi-title">Tỷ lệ Negative</h3>
+                        <p class="kpi-value text-negative">--%</p>
+                        <p class="kpi-subtext"></p>
+                    </article>
+                    
+                    <article class="kpi-card">
+                        <h3 class="kpi-title">Tỷ lệ Neutral</h3>
+                        <p class="kpi-value text-neutral">--%</p>
+                        <p class="kpi-subtext"></p>
+                    </article>  
+
+                <article class="kpi-card">
+                    <h3 class="kpi-title">Tỷ lệ Irrelevant</h3>
+                    <p class="kpi-value text-neutral" id="kpi-irrelevant">--%</p>
+                    <p class="kpi-subtext"></p>
+                </article>
+            </section>
+    
+                <section class="bento-grid">
+                    <div class="card chart-card">
+                        <div class="card-header" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+                            <h3 id="chart-title" style="margin: 0; font-size: 1.25rem;">Biểu đồ Sentiment Index</h3>
+                            <p class="card-subtitle" style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Biến động Daily Index & SMA</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="sentimentChart"></canvas>
+                        </div>
+                    </div>
+    
+                    <div class="card news-card" aria-labelledby="news-feed-title">
+                        <div class="card-header">
+                            <h3 id="news-feed-title">Tin tức mới nhất</h3>
+                            <button class="btn-icon">↗</button>
+                        </div>
+                        <ul class="news-list">
+                            <li class="news-item">
+                                <article>
+                                    <div class="news-meta">
+                                        <span class="news-source">CafeF</span>
+                                        <span class="news-time">--:--</span>
+                                    </div>
+                                    <h4>[Tiêu đề bản tin mẫu]</h4>
+                                    <div class="news-footer">
+                                        <span class="badge badge-neutral">--</span>
+                                        <a href="#" class="news-link">Đọc tiếp</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="news-item">
+                                <article>
+                                    <div class="news-meta">
+                                        <span class="news-source">SBV</span>
+                                        <span class="news-time">--:--</span>
+                                    </div>
+                                    <h4>[Tiêu đề bản tin mẫu]</h4>
+                                    <div class="news-footer">
+                                        <span class="badge badge-neutral">--</span>
+                                        <a href="#" class="news-link">Đọc tiếp</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="news-item">
+                                <article>
+                                    <div class="news-meta">
+                                        <span class="news-source">CafeF</span>
+                                        <span class="news-time">--:--</span>
+                                    </div>
+                                    <h4>[Tiêu đề bản tin mẫu]</h4>
+                                    <div class="news-footer">
+                                        <span class="badge badge-neutral">--</span>
+                                        <a href="#" class="news-link">Đọc tiếp</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    
+        <script type="module" src="../assets/js/pages/dashboard.js"></script>
+    </body>
+    </html>

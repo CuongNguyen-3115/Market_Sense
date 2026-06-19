@@ -1,1 +1,0 @@
-# Đánh giá chéo: In ra bảng thống kê hoặc dùng matplotlib/plotly vẽ biểu đồ nhanh để verify bằng mắt trước khi đưa lên Dashboard.

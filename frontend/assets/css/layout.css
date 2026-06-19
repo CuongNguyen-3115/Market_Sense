@@ -1,0 +1,153 @@
+/* =========================================
+   LAYOUT.CSS - Bố cục tổng thể (Grid/Flex)
+   ========================================= */
+
+/* 1. Bố cục toàn trang */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .dashboard-wrapper {
+    width: 100%;
+    /* Mở rộng max-width cho Dashboard chuẩn màn hình rộng */
+    max-width: 1440px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 2. Bố cục Header (Thanh điều hướng trên cùng) */
+  .top-navbar {
+    background-color: var(--bg-surface);
+    padding: var(--space-md) var(--space-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Luôn nổi lên trên khi cuộn */
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+  
+.brand h1 {
+    margin: 0;
+    font-size: 1.8rem;            /* Tăng kích thước font */
+    font-weight: 800;             /* Đậm hơn */
+    letter-spacing: -0.5px;       /* Tạo độ dày và sang trọng */
+    color: var(--tex    t-primary);
+    position: relative;
+}
+
+/* Thêm hiệu ứng gạch chân màu nhấn hoặc đổi màu chữ */
+.brand h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 30%;
+    height: 3px;
+    background-color: var(--color-brand); /* Gạch chân màu Tím Indigo */
+    border-radius: 2px;
+}
+  
+  /* Điều hướng ngang */
+  .nav-links {
+    display: flex;
+    gap: var(--space-xs);
+  }
+  
+  .nav-links a {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+  }
+  
+  .nav-links a.active {
+    background-color: var(--bg-main);
+    color: var(--color-brand);
+  }
+  
+  /* 3. Khu vực Nội dung chính */
+  .main-content {
+    flex: 1;
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl); /* Tự động tạo khoảng cách giữa các phần mà không cần margin */
+  }
+  
+  /* 4. Page Header (Tiêu đề trang & Bộ lọc) */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+  
+  .page-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .date-filter {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--space-md);
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  /* 5. Khung lưới KPI (4 cột bằng nhau) */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+  }
+  
+  /* 6. Khung lưới Bento (Biểu đồ & Tin tức - Tỷ lệ 7:3) */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 7fr 3fr; /* 7 phần cho chart, 3 phần cho tin tức */
+    gap: var(--space-lg);
+    align-items: stretch; /* Đảm bảo 2 cột cao bằng nhau */
+  }
+  
+  /* =========================================
+     RESPONSIVE (Thích ứng đa màn hình)
+     ========================================= */
+  @media (max-width: 1024px) {
+    /* Màn hình iPad/Tablet: Gộp KPI thành 2 cột, Bento thành 1 cột xếp dọc */
+    .kpi-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .bento-grid {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Màn hình Mobile */
+    .top-navbar, .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .kpi-grid {
+      grid-template-columns: 1fr; /* Mỗi KPI 1 dòng */
+    }
+    .date-filter {
+      flex-wrap: wrap;
+    }
+  }

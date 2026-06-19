@@ -1,0 +1,112 @@
+/* =========================================
+   BASE.CSS - Thiết lập nền tảng UI (Minimalist SaaS)
+   ========================================= */
+
+:root {
+  /* Bảng màu Light Mode (Sáng, Tối giản, Sạch sẽ) */
+  --bg-main: #f4f7fb;          /* Nền trang chính (Xám xanh rất nhạt, giúp nổi bật card trắng) */
+  --bg-surface: #ffffff;       /* Nền các khu vực/card (Trắng tinh) */
+  --bg-surface-hover: #f8fafc; /* Nền khi hover (Xám nhạt) */
+
+  --text-primary: #0f172a;     /* Chữ chính (Đen slate đậm, dễ đọc) */
+  --text-secondary: #64748b;   /* Chữ phụ/chú thích (Xám vừa, giảm sự chú ý) */
+
+  --border-color: #e2e8f0;     /* Màu viền phân cách (Cực nhạt) */
+
+  /* Màu Ngữ nghĩa (Semantic Colors) */
+  --color-positive: #10b981;   /* Xanh lục - Uptrend */
+  --color-negative: #ef4444;   /* Đỏ - Downtrend */
+  --color-neutral: #94a3b8;    /* Xám - Sideway */
+  --color-brand: #6366f1;      /* Tím Indigo - Màu nhấn chính theo phong cách SaaS hiện đại */
+
+  /* HIỆU ỨNG ĐỔ BÓNG (Core của Minimalist UI) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  /* Typography */
+  --font-main: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace; /* Dành cho số liệu KPI */
+
+  /* Spacing (Hệ thống khoảng cách) */
+  --space-xs: 0.25rem;  /* 4px */
+  --space-sm: 0.5rem;   /* 8px */
+  --space-md: 1rem;     /* 16px */
+  --space-lg: 1.5rem;   /* 24px */
+  --space-xl: 2rem;     /* 32px */
+
+  /* Radius (Bo góc to hơn, mềm mại hơn so với code cũ) */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px; /* Dành cho các thẻ tag tròn */
+}
+
+/* =========================================
+   CSS RESET
+   ========================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Giúp chữ sắc nét */
+}
+
+/* =========================================
+   TYPOGRAPHY CƠ BẢN
+   ========================================= */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+h1 { 
+  font-size: 1.75rem; 
+  margin-bottom: var(--space-sm);
+}
+
+h2 { 
+  font-size: 1.25rem; 
+  margin-bottom: var(--space-md);
+  /* Đã bỏ border-bottom ở đây vì Minimalist UI không dùng đường kẻ cứng để chia header */
+}
+
+h3 { 
+  font-size: 1rem; 
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+/* Kiểu dáng link */
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #4f46e5; /* Tím đậm hơn khi hover */
+}
+
+/* Định dạng list cơ bản */
+ul, ol {
+  margin-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary);
+}
+
+strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}

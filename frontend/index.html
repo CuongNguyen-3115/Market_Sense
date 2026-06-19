@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Sense - Demo UI</title>
+    <meta
+      name="description"
+      content="Market Sense demo UI: dashboard sentiment và trợ lý phân tích thị trường."
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Market Sense - Demo UI (Vanilla JS)</h1>
+      <p>
+        Giao diện cơ bản để demo hệ thống phân tích tâm lý thị trường 30 ngày gần
+        đây.
+      </p>
+
+      <section aria-labelledby="phase0-summary">
+        <h2 id="phase0-summary">Phase 0 đã chốt</h2>
+        <ul>
+          <li>Frontend: Vanilla JS (không framework)</li>
+          <li>Deploy: Docker Compose chỉ chạy infra (Kafka/Mongo)</li>
+          <li>Backend + Frontend: chạy local</li>
+          <li>API contract: theo bộ endpoint đã thống nhất</li>
+        </ul>
+      </section>
+
+      <nav aria-label="Điều hướng demo">
+        <h2>Đi tới màn hình demo</h2>
+        <ul>
+          <li><a href="./pages/dashboard.html">Dashboard</a></li>
+          <li><a href="./pages/assistant.html">Assistant</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="next-step">
+        <h2 id="next-step">Bước tiếp theo</h2>
+        <p>
+          Tiếp theo mình sẽ tạo skeleton cho <code>dashboard.html</code> để bạn
+          kiểm tra từng block UI trước khi thêm CSS/JS.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

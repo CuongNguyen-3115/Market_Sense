@@ -3,12 +3,45 @@ __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
 # Môi trường ảo
 venv/
 ENV/
+.venv/
 .env
+.env.*
+!.env.example
 
 # IDE rác
 .vscode/
 .idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs / temp
+*.log
+*.tmp
+pipeline/tempCodeRunnerFile.py
+
+# Runtime data artifacts
+chroma_data/
+output/sentiment_dashboard.json
+evaluation/eval_results/*.csv
+notebooks/iframe_figures/
+notebooks/newplot_*
+notebooks/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+pipeline/KAFKA_CONSUMER_DOCS.md
+scrapers/CAFEF_SCRAPER_DOCS.md
+scrapers/SBV_SCRAPER_DOCS.md
+
+NOTE.md

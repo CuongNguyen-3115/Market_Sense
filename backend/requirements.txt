@@ -1,0 +1,12 @@
+beautifulsoup4
+chromadb
+groq
+huggingface_hub
+kafka-python-ng
+numpy
+pandas
+pymongo
+python-dotenv
+pytz
+requests
+sentence-transformers
