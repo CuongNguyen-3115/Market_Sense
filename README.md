@@ -15,10 +15,10 @@ MARKET-SENSE là giải pháp tự động hóa luồng tin tức vĩ mô, giúp
 ## Giao diện Hệ thống
 
 *(Ảnh Dashboard Tổng quan)*
-![Market Sense Dashboard](./docs/dashboard.png)
+![Market Sense Dashboard](./assets/dashboard.png)
 
 *(Ảnh Trợ lý AI RAG Assistant)*
-![RAG Assistant](./docs/assistant.png)
+![RAG Assistant](./assets/assistant.png)
 
 ## Công nghệ sử dụng
 * **AI/LLM Core:** Llama-3-8B / Llama-3.3-70B (Groq), Vietnamese-sBERT.
